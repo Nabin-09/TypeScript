@@ -36,3 +36,27 @@ function serve(word : Name | Naam){
 }
 
 //above we saw an interesting use case of instanceof and annotations
+
+
+//Custom types
+
+type NabinOrder = {
+    type : String
+    sugar : Number
+}
+
+function isNabinOrder(obj : any) : obj is NabinOrder{
+    return (
+        typeof obj == 'object' &&
+        obj !== null &&
+        typeof obj.type === 'string' &&
+        typeof obj.sugar === 'number'
+    )
+}
+
+function serving(item : NabinOrder | string){
+    if(isNabinOrder(item)){
+        return `You ordered ${item.type} with sugar : ${item.sugar}`
+    }
+    return `Your custom instruction : ${item}`
+}
