@@ -60,3 +60,13 @@ function serving(item : NabinOrder | string){
     }
     return `Your custom instruction : ${item}`
 }
+
+// we create custom datatypes using keyword : type
+
+//interesting use case : 
+type bike  = {type : 'two-wheeler' ; maxi : number};
+type car = {type : 'four-wheeler' ; torque : number};
+type truck = {type : '12-wheeler' ; torque : number};
+
+type vehicle = bike | car |truck //vehicle can either be bike car or truck
+
