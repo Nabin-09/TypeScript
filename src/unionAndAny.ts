@@ -8,7 +8,8 @@ let apiRequestStatus: 'pending' | 'success' | 'error' = 'error' //this is custom
 let airlineSeat : 'aisle' | 'window' | 'middle' = 'middle' //very useful custom annotation
 
 const orders = ['12' ,  '20' , '28' , '42']
-let currentOrder; // this shows type any currentOrder : String (production ready way)
+let currentOrder : String | undefined; // this shows type any currentOrder : String | Undefined(production ready way , if no values is a
+//assigned to currentOrder)
 for(let order of orders){   
     if(order === '28'){
         currentOrder = order
