@@ -68,5 +68,6 @@ type bike  = {type : 'two-wheeler' ; maxi : number};
 type car = {type : 'four-wheeler' ; torque : number};
 type truck = {type : '12-wheeler' ; torque : number};
 
-type vehicle = bike | car |truck //vehicle can either be bike car or truck
+type vehicle = bike | car | truck //vehicle can either be bike car or truck
 
+//nowadays we prefer using 'unknown' than 'any' //read about it
