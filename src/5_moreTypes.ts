@@ -47,5 +47,14 @@ console.log(StrData);
 
 type Role = 'admin' | 'user';
 function redirectRoleBased(role : Role): void{ //doesnt matter whats returned or nothing is returned for void
-
+    if(role === 'admin'){
+        console.log(`Redirecting to admin`);
+    return
+    }
+    else if(role === 'user'){
+        console.log(`Redirecting to user dashboard`);
+        return
+    }
+    role;  //gives role : never (but if we had third type as well it would default be that type)
+       
 }
