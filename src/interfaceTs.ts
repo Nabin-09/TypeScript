@@ -21,3 +21,14 @@ function makeOrder(order : itemOrder){
 function serveOrder(order : itemOrder){
     console.log(order);
 }
+
+type carEngine = {
+    cylinders : number ;
+    turbo : boolean;
+}
+
+class Garage implements carEngine{ //incorrectly implements interface carEngine
+    cylinders = 10;
+    turbo = true;
+    //although this runs but isnt good practice
+}
