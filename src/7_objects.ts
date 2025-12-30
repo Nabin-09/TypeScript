@@ -55,3 +55,6 @@ type Order = {
 }
 
 //very good practice for code clarity 
+
+//PARTIAL keyword that makes all the types optional
+
