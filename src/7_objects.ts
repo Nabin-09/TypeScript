@@ -18,3 +18,28 @@ car = {
     is4wd : true
 }
 
+type Car = {
+    name : string,
+    price : number,
+    is4wd :  boolean
+}
+
+const wagonR : Car = {
+    name : 'Wagon R',
+    price : 7,
+    is4wd : false
+}
+
+// important observation
+type cup = {size : string};
+
+let bigCup : cup = {
+    size : 'large',
+}
+
+let smallCup = {
+    size : 'small',
+    beans : 'arabica'
+}
+
+bigCup = smallCup //this actually works , as smallcup satisfies the minimum condition of type cup
