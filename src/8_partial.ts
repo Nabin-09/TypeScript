@@ -20,3 +20,9 @@ const OrderCar = (needed : Required<Car>)=>{
 }
 
 OrderCar({name : 'WagonR' , bhp : 100 , is4wd : false})
+
+
+//Discuss about Omit and Pick
+
+type BasicCarInfo = Pick<Car, 'name'|'bhp'> //precisely pick which elements are needed
+
