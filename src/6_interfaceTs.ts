@@ -32,3 +32,24 @@ class Garage implements carEngine{ //incorrectly implements interface carEngine
     turbo = true;
     //although this runs but isnt good practice
 }
+interface carSize{
+    size : 'Small' | 'large'
+}
+
+type BaseCar = {
+    bhp : number
+}
+type Extra = {
+    sunroof : boolean
+}
+
+//example of intersection of types
+
+type car = Extra & BaseCar
+
+const thar : car = {
+    bhp : 140,
+    sunroof : true
+}
+
+//this is how we use intersection 
