@@ -53,3 +53,13 @@ const thar : car = {
 }
 
 //this is how we use intersection 
+
+//optional data 
+
+type User = {
+    username : string,
+    bio?: string //optional variable
+}
+
+const u1 : User = {username : 'nabin09'};
+const u2 : User = {username : 'nitin09' , bio : 'I am a software dev in India'} //both are valid
