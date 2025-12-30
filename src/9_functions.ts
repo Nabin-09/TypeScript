@@ -13,3 +13,9 @@ function getSeats(seats : number): number{ //return type of function
 function hey() : void{ //this is return type of function
     console.log(`Hey there`);
 }
+
+//optional arguments
+
+function calculateEMI(principal?: number , interest?: number , time?: number):string{
+    return `Calculate interest`
+}
