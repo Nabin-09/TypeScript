@@ -43,3 +43,15 @@ let smallCup = {
 }
 
 bigCup = smallCup //this actually works , as smallcup satisfies the minimum condition of type cup
+
+type item = {name : string , quantity : number}
+type address = {street : string , pin : number}
+
+type Order = {
+    id : string ,
+    phone : string ,
+    items_ordered : item[] //list of the type defined
+    Address : address
+}
+
+//very good practice for code clarity 
