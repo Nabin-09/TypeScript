@@ -22,3 +22,4 @@ const Car_list : Cars[] = [
     {name : 'Magnite' , price : 12}
 ]
 
+const cities : readonly string[] = ['Delhi' , 'Mumbai'] //this cant be updated
