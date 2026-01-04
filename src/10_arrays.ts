@@ -23,3 +23,7 @@ const Car_list : Cars[] = [
 ]
 
 const cities : readonly string[] = ['Delhi' , 'Mumbai'] //this cant be updated
+const table : number[][] = [
+    [3 , 4 ,5 , 6, 7],
+    [8 , 9, 10, 11 , 12]
+] //creating 2D array
