@@ -27,3 +27,13 @@ const table : number[][] = [
     [3 , 4 ,5 , 6, 7],
     [8 , 9, 10, 11 , 12]
 ] //creating 2D array
+
+
+let userInfo : [number , string , boolean] //stictly follow this order
+
+userInfo_data : userInfo = [23 , 'Nabin' , true] //now we can cannot alter [23 , true , 'Nabin']
+
+
+
+
+
