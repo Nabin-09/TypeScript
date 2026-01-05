@@ -52,7 +52,9 @@ enum Car_size{
     SUV = "SUV",
     SEDAN = "Sedan"
 }//we can assign values to enums as well , if we assign numerical value to some and not to other , automatically incremental values
-//are assigned
+//are assigned , assigning mixed values of string and num is not a good practice
+
+
 
 
 
