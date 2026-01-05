@@ -33,7 +33,26 @@ let userInfo : [number , string , boolean] //stictly follow this order
 
 userInfo_data : userInfo = [23 , 'Nabin' , true] //now we can cannot alter [23 , true , 'Nabin']
 
+// named tuple
 
+const carItems : [name : string , price : number ] = ['WagonR' , 12]
+
+//enums
+
+enum CarSize{
+    HatchBack,
+    SUV,
+    Sedan
+}
+
+const size_ = CarSize.HatchBack;
+
+enum Car_size{
+    HATCHBACK = "hatchback",
+    SUV = "SUV",
+    SEDAN = "Sedan"
+}//we can assign values to enums as well , if we assign numerical value to some and not to other , automatically incremental values
+//are assigned
 
 
 
